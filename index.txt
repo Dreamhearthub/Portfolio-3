@@ -4,21 +4,21 @@ vCard - Personal Portfolio
 
 alt = Jayden Jin
 Jayden Jin
-Web developer
+Senior Software Engineer
 
 Show Contacts
 
 Email
-Jayden@example.com
+jaydenjin912@gmail.com
 
 Phone
-+1 (213) 352-2795
++1 (778) 648 2299
 
 Birthday
-June 23, 1982
+September 12, 1992
 
 Location
-Sacramento, California, USA
+Calgary, Alberta, Canada
 
 # navbar
 
@@ -70,8 +70,8 @@ alt = Jessica miller
 Jessica miller
 Jayden was hired to create a corporate identity. We were very pleased with the work done. She has a lot of experience and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt consectetur adipiscing elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
 
-alt = Emily evans
-Emily evans
+alt = Jason A
+Jason A
 Jayden was hired to create a corporate identity. We were very pleased with the work done. She has a lot of experience and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt consectetur adipiscing elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
 
 alt = Henry william
@@ -93,17 +93,9 @@ Resume
 
 Education
 
-University school of the arts
+University of Calgary
 2007 — 2008
-Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et quas molestias exceptur.
-
-New york academy of art
-2006 — 2007
-Ratione voluptatem sequi nesciunt, facere quisquams facere menda ossimus, omnis voluptas assumenda est omnis..
-
-High school of art and design
-2002 — 2004
-Duis aute irure dolor in reprehenderit in voluptate, quila voluptas mag odit aut fugit, sed consequuntur magni dolores eos.
+Relevant Coursework: Data Structures, Web Development, Database Management, Software Engineering, Algorithms
 
 Experience
 
