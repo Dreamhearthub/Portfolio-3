@@ -569,12 +569,25 @@
               <i class="h5 timeline-item-address">San Francisco, Califonia</i>
               <span>01/2023 — 01/2024</span>              
               
-              <p class="timeline-text">
-                <h4>- Optimized the frontend performance of a healthcare platform built with React and Vue, resulting in a 40% reduction in video call latency and improved user experience for remote patient consultations.</h4>
-                <h4>- Developed interactive data visualizations using React libraries like D3.js, allowing healthcare providers to analyze patient data more effectively and make informed decisions.</h4>
-                <h4>- Established best practices for code quality and testing in React and NextJS, leading to a 30% reduction in bugs and improved stability of the healthcare application.</h4>
-                <h4>- Implemented a system for collecting and integrating user feedback into the React frontend, facilitating continuous improvement based on user needs and preferences</h4>
+              <p class="timeline-text" id="forta-experience">
+                <!-- Experience items will be injected here by JavaScript -->
               </p>
+              <script>
+                // Forta Health experience data array
+                const fortaExperience = [
+                  "Optimized the frontend performance of a healthcare platform built with React and Vue, resulting in a 40% reduction in video call latency and improved user experience for remote patient consultations.",
+                  "Developed interactive data visualizations using React libraries like D3.js, allowing healthcare providers to analyze patient data more effectively and make informed decisions.",
+                  "Established best practices for code quality and testing in React and NextJS, leading to a 30% reduction in bugs and improved stability of the healthcare application.",
+                  "Implemented a system for collecting and integrating user feedback into the React frontend, facilitating continuous improvement based on user needs and preferences."
+                ];
+                // Render experience items
+                const fortaContainer = document.getElementById('forta-experience');
+                fortaExperience.forEach(item => {
+                  const h4 = document.createElement('h4');
+                  h4.textContent = `- ${item}`;
+                  fortaContainer.appendChild(h4);
+                });
+              </script>
               
             </li>
             
