@@ -542,23 +542,6 @@
               <p class="timeline-text" id="texonmo-experience">
                 <!-- Experience items will be injected here by JavaScript -->
               </p>
-              <script>
-                // Experience data array
-                const texonmoExperience = [
-                  "Designed and developed the platform's backend using Golang, resulting in a 30% improvement in application efficiency and faster response times for users.",
-                  "Collaborated with cross-functional teams to design, implement, and deploy new features.",
-                  "Implemented responsive and user-friendly UI components with React and TypeScript.",
-                  "Maintained comprehensive documentation for new and existing features, ensuring ease of maintenance and scalability.",
-                  "Ensured code quality and consistency through code reviews, unit testing, and integration testing."
-                ];
-                // Render experience items
-                const container = document.getElementById('texonmo-experience');
-                texonmoExperience.forEach(item => {
-                  const h4 = document.createElement('h4');
-                  h4.textContent = `- ${item}`;
-                  container.appendChild(h4);
-                });
-              </script>
               
             </li>
             
@@ -572,22 +555,6 @@
               <p class="timeline-text" id="forta-experience">
                 <!-- Experience items will be injected here by JavaScript -->
               </p>
-              <script>
-                // Forta Health experience data array
-                const fortaExperience = [
-                  "Optimized the frontend performance of a healthcare platform built with React and Vue, resulting in a 40% reduction in video call latency and improved user experience for remote patient consultations.",
-                  "Developed interactive data visualizations using React libraries like D3.js, allowing healthcare providers to analyze patient data more effectively and make informed decisions.",
-                  "Established best practices for code quality and testing in React and NextJS, leading to a 30% reduction in bugs and improved stability of the healthcare application.",
-                  "Implemented a system for collecting and integrating user feedback into the React frontend, facilitating continuous improvement based on user needs and preferences."
-                ];
-                // Render experience items
-                const fortaContainer = document.getElementById('forta-experience');
-                fortaExperience.forEach(item => {
-                  const h4 = document.createElement('h4');
-                  h4.textContent = `- ${item}`;
-                  fortaContainer.appendChild(h4);
-                });
-              </script>
               
             </li>
             
@@ -601,23 +568,6 @@
               <p class="timeline-text" id="ordway-experience">
                 <!-- Experience items will be injected here by JavaScript -->
               </p>
-              <script>
-                // Ordway experience data array
-                const ordwayExperience = [
-                  "Developed and implemented new feature(Analytics) using Ruby on Rails, Python, React, and PostgreSQL, resulting in 20% increase in data analysis efficiency",
-                  "Collaborated closely with product managers, designers, and cross-functional teams to gather requirements, define project scope, and deliver high-quality software solutions on time",
-                  "Integrated third-party APIs to enhance application functionality and data retrieval capabilities",
-                  "Utilized Redux to manage application state, improving code maintainability and reducing bugs by 15%.",
-                  "Participated in Agile development processes, including daily stand-ups, sprint planning, and retrospectives."
-                ];
-                // Render experience items
-                const ordwayContainer = document.getElementById('ordway-experience');
-                ordwayExperience.forEach(item => {
-                  const h4 = document.createElement('h4');
-                  h4.textContent = `- ${item}`;
-                  ordwayContainer.appendChild(h4);
-                });
-              </script>
 
             </li>
 
@@ -633,23 +583,7 @@
               <p class="timeline-text" id="skipify-experience">
                 <!-- Experience items will be injected here by JavaScript -->
               </p>
-              <script>
-                // Skipify experience data array
-                const skipifyExperience = [
-                  "Cooperated with a remote Agile development team to design, develop, and maintain web applications using React and Node.js technologies",
-                  "Participated in daily stand-up meetings and bi-weekly sprint planning sessions to ensure smooth project execution and efficient task allocation within the team",
-                  "Led the adoption of automated testing using Jest and Enzyme, resulting in a 30% reduction in production bugs and improved overall software reliability",
-                  "Created interactive and responsive front-end interfaces, resulting in positive feedback from users and a 20% decrease in bounce rate"
-                ];
-                // Render experience items
-                const skipifyContainer = document.getElementById('skipify-experience');
-                skipifyExperience.forEach(item => {
-                  const h4 = document.createElement('h4');
-                  h4.textContent = `- ${item}`;
-                  skipifyContainer.appendChild(h4);
-                });
-              </script>
-
+              
             </li>
 
             <li class="timeline-item">
@@ -664,23 +598,7 @@
               <p class="timeline-text" id="kunzig-experience">
                 <!-- Experience items will be injected here by JavaScript -->
               </p>
-              <script>
-                // Kunzig Consulting experience data array
-                const kunzigExperience = [
-                  "Developed 5 full-stack web applications which processed, analyzed, and rendered data visually",
-                  "Conducted code reviews and provided constructive feedback to team members, resulting in improved code quality and best practices adherence",
-                  "Liaised with 8 team members (back end developers, front end developers, quality assurance testers, and CTO) as needed",
-                  "Designed and implemented 15 RESTful APIs, optimizing data exchange between front-end and back-end systems and reducing API response times by 40%"
-                ];
-                // Render experience items
-                const kunzigContainer = document.getElementById('kunzig-experience');
-                kunzigExperience.forEach(item => {
-                  const h4 = document.createElement('h4');
-                  h4.textContent = `- ${item}`;
-                  kunzigContainer.appendChild(h4);
-                });
-              </script>
-
+              
             </li>
 
           </ol>
@@ -1321,6 +1239,60 @@
   -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <script>
+  // Helper function to render experience arrays
+  function renderExperience(containerId, experienceArray) {
+    const container = document.getElementById(containerId);
+    if (!container) return;
+    experienceArray.forEach(item => {
+      const h4 = document.createElement('h4');
+      h4.textContent = `- ${item}`;
+      container.appendChild(h4);
+    });
+  }
+
+  // Experience data arrays
+  const texonmoExperience = [
+    "Designed and developed the platform's backend using Golang, resulting in a 30% improvement in application efficiency and faster response times for users.",
+    "Collaborated with cross-functional teams to design, implement, and deploy new features.",
+    "Implemented responsive and user-friendly UI components with React and TypeScript.",
+    "Maintained comprehensive documentation for new and existing features, ensuring ease of maintenance and scalability.",
+    "Ensured code quality and consistency through code reviews, unit testing, and integration testing."
+  ];
+  const fortaExperience = [
+    "Optimized the frontend performance of a healthcare platform built with React and Vue, resulting in a 40% reduction in video call latency and improved user experience for remote patient consultations.",
+    "Developed interactive data visualizations using React libraries like D3.js, allowing healthcare providers to analyze patient data more effectively and make informed decisions.",
+    "Established best practices for code quality and testing in React and NextJS, leading to a 30% reduction in bugs and improved stability of the healthcare application.",
+    "Implemented a system for collecting and integrating user feedback into the React frontend, facilitating continuous improvement based on user needs and preferences."
+  ];
+  const ordwayExperience = [
+    "Developed and implemented new feature(Analytics) using Ruby on Rails, Python, React, and PostgreSQL, resulting in 20% increase in data analysis efficiency",
+    "Collaborated closely with product managers, designers, and cross-functional teams to gather requirements, define project scope, and deliver high-quality software solutions on time",
+    "Integrated third-party APIs to enhance application functionality and data retrieval capabilities",
+    "Utilized Redux to manage application state, improving code maintainability and reducing bugs by 15%.",
+    "Participated in Agile development processes, including daily stand-ups, sprint planning, and retrospectives."
+  ];
+  const skipifyExperience = [
+    "Cooperated with a remote Agile development team to design, develop, and maintain web applications using React and Node.js technologies",
+    "Participated in daily stand-up meetings and bi-weekly sprint planning sessions to ensure smooth project execution and efficient task allocation within the team",
+    "Led the adoption of automated testing using Jest and Enzyme, resulting in a 30% reduction in production bugs and improved overall software reliability",
+    "Created interactive and responsive front-end interfaces, resulting in positive feedback from users and a 20% decrease in bounce rate"
+  ];
+  const kunzigExperience = [
+    "Developed 5 full-stack web applications which processed, analyzed, and rendered data visually",
+    "Conducted code reviews and provided constructive feedback to team members, resulting in improved code quality and best practices adherence",
+    "Liaised with 8 team members (back end developers, front end developers, quality assurance testers, and CTO) as needed",
+    "Designed and implemented 15 RESTful APIs, optimizing data exchange between front-end and back-end systems and reducing API response times by 40%"
+  ];
+
+  // Render all experiences
+  renderExperience('texonmo-experience', texonmoExperience);
+  renderExperience('forta-experience', fortaExperience);
+  renderExperience('ordway-experience', ordwayExperience);
+  renderExperience('skipify-experience', skipifyExperience);
+  renderExperience('kunzig-experience', kunzigExperience);
+</script>
 
 </body>
 
