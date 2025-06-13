@@ -1344,6 +1344,45 @@
           if (e.target === dialog) dialog.style.display = 'none';
         };
       }
+
+      // Contact form handler using EmailJS
+      document.addEventListener('DOMContentLoaded', function() {
+        const form = document.querySelector('.contact-form form');
+        if (!form) return;
+        const sendBtn = form.querySelector('button[type="submit"]');
+        const originalBtnText = sendBtn.querySelector('span').textContent;
+        form.addEventListener('submit', function(e) {
+          e.preventDefault();
+          sendBtn.disabled = true;
+          sendBtn.querySelector('span').textContent = 'Sending...';
+          const formData = new FormData(form);
+          // Prepare template params for EmailJS
+          const templateParams = {
+            name: formData.get('fullname'),
+            from_email: formData.get('email'),
+            title: formData.get('message')
+          };
+          emailjs.send('service_xdht3rn','template_9fea4mw', templateParams) // <-- Replace with your EmailJS service/template IDs
+            .then(function(response) {
+              alert('Message sent successfully!');
+              form.reset();
+              sendBtn.disabled = false;
+              sendBtn.querySelector('span').textContent = originalBtnText;
+            }, function(error) {
+              alert('Failed to send message. Please try again later.');
+              sendBtn.disabled = false;
+              sendBtn.querySelector('span').textContent = originalBtnText;
+            });
+        });
+      });
+    </script>
+
+    <!-- Add EmailJS SDK -->
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script>
+      (function(){
+        emailjs.init('CORfEpeGebtLs4kLZ'); // <-- Replace with your EmailJS user ID
+      })();
     </script>
   </body>
 </html>
