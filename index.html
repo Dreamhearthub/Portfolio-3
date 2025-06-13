@@ -539,13 +539,26 @@
               <i class="h5 timeline-item-address">England, United Kingdom</i>
               <span>04/2022 — Present</span>
 
-              <p class="timeline-text">
-                <h4>- Developed and maintained full stack web applications using React, Node.js, Ruby on Rails, TypeScript, and Python.</h4>
-                <h4>- Collaborated with cross-functional teams to design, implement, and deploy new features.</h4>
-                <h4>- Implemented responsive and user-friendly UI components with React and TypeScript.</h4>
-                <h4>- Maintained comprehensive documentation for new and existing features, ensuring ease of maintenance and scalability.</h4>
-                <h4>- Ensured code quality and consistency through code reviews, unit testing, and integration testing.</h4>
+              <p class="timeline-text" id="texonmo-experience">
+                <!-- Experience items will be injected here by JavaScript -->
               </p>
+              <script>
+                // Experience data array
+                const texonmoExperience = [
+                  "Designed and developed the platform's backend using Golang, resulting in a 30% improvement in application efficiency and faster response times for users.",
+                  "Collaborated with cross-functional teams to design, implement, and deploy new features.",
+                  "Implemented responsive and user-friendly UI components with React and TypeScript.",
+                  "Maintained comprehensive documentation for new and existing features, ensuring ease of maintenance and scalability.",
+                  "Ensured code quality and consistency through code reviews, unit testing, and integration testing."
+                ];
+                // Render experience items
+                const container = document.getElementById('texonmo-experience');
+                texonmoExperience.forEach(item => {
+                  const h4 = document.createElement('h4');
+                  h4.textContent = `- ${item}`;
+                  container.appendChild(h4);
+                });
+              </script>
               
             </li>
             
@@ -561,7 +574,6 @@
                 <h4>- Developed interactive data visualizations using React libraries like D3.js, allowing healthcare providers to analyze patient data more effectively and make informed decisions.</h4>
                 <h4>- Established best practices for code quality and testing in React and NextJS, leading to a 30% reduction in bugs and improved stability of the healthcare application.</h4>
                 <h4>- Implemented a system for collecting and integrating user feedback into the React frontend, facilitating continuous improvement based on user needs and preferences</h4>
-                
               </p>
               
             </li>
