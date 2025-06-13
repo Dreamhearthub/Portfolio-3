@@ -1,131 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>vCard - Personal Portfolio</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>vCard - Personal Portfolio</title>
-
-  <!--
+    <!--
     - favicon
   -->
-  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="./assets/images/logo.ico"
+      type="image/x-icon"
+    />
 
-  <!--
+    <!--
     - custom css link
   -->
-  <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css" />
 
-  <!--
+    <!--
     - google font link
   -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
-
-  <!--
+  <body>
+    <!--
     - #MAIN
   -->
 
-  <main>
-
-    <!--
+    <main>
+      <!--
       - #SIDEBAR
     -->
 
-    <aside class="sidebar" data-sidebar>
+      <aside class="sidebar" data-sidebar>
+        <div class="sidebar-info">
+          <figure class="avatar-box">
+            <img src="./assets/images/my-avatar.png" alt="Jayden" width="80" />
+          </figure>
 
-      <div class="sidebar-info">
+          <div class="info-content">
+            <h1 class="name" title="Jayden">Jayden Jin</h1>
 
-        <figure class="avatar-box">
-          <img src="./assets/images/my-avatar.png" alt="Jayden" width="80">
-        </figure>
+            <p class="title">Senior Software Engineer</p>
+          </div>
 
-        <div class="info-content">
-          <h1 class="name" title="Jayden">Jayden Jin</h1>
+          <button class="info_more-btn" data-sidebar-btn>
+            <span>Show Contacts</span>
 
-          <p class="title">Senior Software Engineer</p>
+            <ion-icon name="chevron-down"></ion-icon>
+          </button>
         </div>
 
-        <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
+        <div class="sidebar-info_more">
+          <div class="separator"></div>
 
-          <ion-icon name="chevron-down"></ion-icon>
-        </button>
+          <ul class="contacts-list">
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
 
-      </div>
+              <div class="contact-info">
+                <p class="contact-title">Email</p>
 
-      <div class="sidebar-info_more">
+                <a href="mailto:JaydenJin912@gmail.com" class="contact-link"
+                  >jaydenjin912@gmail.com</a
+                >
+              </div>
+            </li>
 
-        <div class="separator"></div>
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="phone-portrait-outline"></ion-icon>
+              </div>
 
-        <ul class="contacts-list">
+              <div class="contact-info">
+                <p class="contact-title">Phone</p>
 
-          <li class="contact-item">
+                <a href="tel:+1 (778) 648-2299" class="contact-link"
+                  >+1 (778) 648-2299</a
+                >
+              </div>
+            </li>
 
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
-            </div>
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="calendar-outline"></ion-icon>
+              </div>
 
-            <div class="contact-info">
-              <p class="contact-title">Email</p>
+              <div class="contact-info">
+                <p class="contact-title">Birthday</p>
 
-              <a href="mailto:JaydenJin912@gmail.com" class="contact-link">jaydenjin912@gmail.com</a>
-            </div>
+                <time datetime="1982-06-23">September 12, 1992</time>
+              </div>
+            </li>
 
-          </li>
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
 
-          <li class="contact-item">
+              <div class="contact-info">
+                <p class="contact-title">Location</p>
 
-            <div class="icon-box">
-              <ion-icon name="phone-portrait-outline"></ion-icon>
-            </div>
+                <address>Calgary, Alberta, Canada</address>
+              </div>
+            </li>
+          </ul>
 
-            <div class="contact-info">
-              <p class="contact-title">Phone</p>
+          <div class="separator"></div>
 
-              <a href="tel:+1 (778) 648-2299" class="contact-link">+1 (778) 648-2299</a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="calendar-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Birthday</p>
-
-              <time datetime="1982-06-23">September 12, 1992</time>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="location-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Location</p>
-
-              <address>Calgary, Alberta, Canada</address>
-            </div>
-
-          </li>
-
-        </ul>
-
-        <div class="separator"></div>
-
-        <!-- <ul class="social-list">
+          <!-- <ul class="social-list">
 
           <li class="social-item">
             <a href="#" class="social-link">
@@ -146,850 +140,884 @@
           </li>
 
         </ul> -->
+        </div>
+      </aside>
 
-      </div>
-
-    </aside>
-
-
-
-
-
-    <!--
+      <!--
       - #main-content
     -->
 
-    <div class="main-content">
-
-      <!--
+      <div class="main-content">
+        <!--
         - #NAVBAR
       -->
 
-      <nav class="navbar">
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <button class="navbar-link active" data-nav-link>About</button>
+            </li>
 
-        <ul class="navbar-list">
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Resume</button>
+            </li>
 
-          <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
-          </li>
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Portfolio</button>
+            </li>
 
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
-          </li>
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Contact</button>
+            </li>
+          </ul>
+        </nav>
 
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Contact</button>
-          </li>
-
-        </ul>
-
-      </nav>
-
-
-
-
-
-      <!--
+        <!--
         - #ABOUT
       -->
 
-      <article class="about  active" data-page="about">
+        <article class="about active" data-page="about">
+          <header>
+            <h2 class="h2 article-title">About me</h2>
+          </header>
 
-        <header>
-          <h2 class="h2 article-title">About me</h2>
-        </header>
+          <section class="about-text">
+            <p>My name is Jayden Jin from Calgary, Alberta, Canada.</p>
 
-        <section class="about-text">
-          <p>
-            My name is Jayden Jin from Calgary, Alberta, Canada.
-          </p>
+            <p>
+              Full Stack Engineer with 12+ years of hands-on experience
+              designing, developing, and implementing applications and solutions
+              using a range of technologies and programming languages. Seeking
+              to leverage broad development experience and hands-on technical
+              expertise in a challenging role as a Full-stack Engineer.
+            </p>
+          </section>
 
-          <p>
-            Full Stack Engineer with 12+ years of hands-on experience designing, developing, and implementing applications and solutions using a range of technologies and programming languages. Seeking to leverage broad development experience and hands-on technical expertise in a challenging role as a Full-stack Engineer.
-          </p>
-        </section>
-
-
-        <!--
+          <!--
           - service
         -->
 
-        <section class="service">
+          <section class="service">
+            <h3 class="h3 service-title">What i'm doing</h3>
 
-          <h3 class="h3 service-title">What i'm doing</h3>
+            <ul class="service-list">
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-dev.svg"
+                    alt="Web development icon"
+                    width="40"
+                  />
+                </div>
 
-          <ul class="service-list">
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Web development</h4>
 
-            <li class="service-item">
+                  <p class="service-item-text">
+                    High-quality development of sites at the professional level.
+                  </p>
+                </div>
+              </li>
 
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
-              </div>
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-app.svg"
+                    alt="mobile app icon"
+                    width="40"
+                  />
+                </div>
 
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Web development</h4>
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Mobile apps</h4>
 
-                <p class="service-item-text">
-                  High-quality development of sites at the professional level.
-                </p>
-              </div>
+                  <p class="service-item-text">
+                    Professional development of applications for iOS and
+                    Android.
+                  </p>
+                </div>
+              </li>
 
-            </li>
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-photo.svg"
+                    alt="camera icon"
+                    width="40"
+                  />
+                </div>
 
-            <li class="service-item">
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Desktop Applications</h4>
 
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
-              </div>
+                  <p class="service-item-text">
+                    I can build cross-platform desktop applications with
+                    Electron.js
+                  </p>
+                </div>
+              </li>
 
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Mobile apps</h4>
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-design.svg
+                "
+                    alt="design icon"
+                    width="40"
+                  />
+                </div>
 
-                <p class="service-item-text">
-                  Professional development of applications for iOS and Android.
-                </p>
-              </div>
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Web design</h4>
 
-            </li>
+                  <p class="service-item-text">
+                    The most modern and high-quality design made at a
+                    professional level.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </section>
 
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Desktop Applications</h4>
-
-                <p class="service-item-text">
-                  I can build cross-platform desktop applications with Electron.js
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-design.svg
-                " alt="design icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Web design</h4>
-
-                <p class="service-item-text">
-                  The most modern and high-quality design made at a professional level.
-                </p>
-              </div>
-
-            </li>
-          </ul>
-
-        </section>
-
-
-        <!--
+          <!--
           - testimonials
         -->
 
-        <section class="testimonials">
+          <section class="testimonials">
+            <h3 class="h3 testimonials-title">Testimonials</h3>
 
-          <h3 class="h3 testimonials-title">Testimonials</h3>
+            <ul class="testimonials-list has-scrollbar">
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <figure class="testimonials-avatar-box">
+                    <img
+                      src="./assets/images/face-0.jpg"
+                      alt="Rashad Itani"
+                      width="60"
+                      data-testimonials-avatar
+                    />
+                  </figure>
 
-          <ul class="testimonials-list has-scrollbar">
+                  <h4
+                    class="h4 testimonials-item-title"
+                    data-testimonials-title
+                  >
+                    Rashad Itani
+                  </h4>
 
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/face-0.jpg" alt="Rashad Itani" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Rashad Itani</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-
-                    <i>
-                      My experience with Jayden is a pleasant
-                      experience, he has done a great job building
-                      the new features and fixing bugs, and
-                      optimizing what was already in there. I would
-                      highly recommend working with Jayden. Well
-                      done Jayden!!
-                    </i>
-                  </p>
+                  <div class="testimonials-text" data-testimonials-text>
+                    <p>
+                      <i>
+                        My experience with Jayden is a pleasant experience, he
+                        has done a great job building the new features and
+                        fixing bugs, and optimizing what was already in there. I
+                        would highly recommend working with Jayden. Well done
+                        Jayden!!
+                      </i>
+                    </p>
+                  </div>
                 </div>
+              </li>
 
-              </div>
-            </li>
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <figure class="testimonials-avatar-box">
+                    <img
+                      src="./assets/images/face-1.jpg"
+                      alt="Julian Kunzig"
+                      width="60"
+                      data-testimonials-avatar
+                    />
+                  </figure>
 
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
+                  <h4
+                    class="h4 testimonials-item-title"
+                    data-testimonials-title
+                  >
+                    Julian Kunzig
+                  </h4>
 
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/face-1.jpg" alt="Julian Kunzig" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Julian Kunzig</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    <i>
-                      Working with Jayden has been a pleasure.
-                      Better yet - I alerted them of a minor issue
-                      before going to sleep. The issue was fixed the
-                      next morning. I couldn't ask for better
-                      support. Thank you Jayden! This is easily a 5
-                      star freelancer.
-                    </i>
-                  </p>
+                  <div class="testimonials-text" data-testimonials-text>
+                    <p>
+                      <i>
+                        Working with Jayden has been a pleasure. Better yet - I
+                        alerted them of a minor issue before going to sleep. The
+                        issue was fixed the next morning. I couldn't ask for
+                        better support. Thank you Jayden! This is easily a 5
+                        star freelancer.
+                      </i>
+                    </p>
+                  </div>
                 </div>
+              </li>
 
-              </div>
-            </li>
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <figure class="testimonials-avatar-box">
+                    <img
+                      src="./assets/images/face-2.jpeg"
+                      alt="Jason A"
+                      width="60"
+                      data-testimonials-avatar
+                    />
+                  </figure>
 
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
+                  <h4
+                    class="h4 testimonials-item-title"
+                    data-testimonials-title
+                  >
+                    Jason A
+                  </h4>
 
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/face-2.jpeg" alt="Jason A" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Jason A</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    <i>
-                      Jayden is a skilled developer in a lot of
-                      different areas. He contributed highly
-                      valuable work for us in a complex web app
-                      using react.js. Also, he successfully
-                      developed a Laravel php/js app as fullstack
-                      dev.
-                    </i>
-                  </p>
+                  <div class="testimonials-text" data-testimonials-text>
+                    <p>
+                      <i>
+                        Jayden is a skilled developer in a lot of different
+                        areas. He contributed highly valuable work for us in a
+                        complex web app using react.js. Also, he successfully
+                        developed a Laravel php/js app as fullstack dev.
+                      </i>
+                    </p>
+                  </div>
                 </div>
+              </li>
 
-              </div>
-            </li>
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <figure class="testimonials-avatar-box">
+                    <img
+                      src="./assets/images/face-3.jpeg"
+                      alt="Nicolas V"
+                      width="60"
+                      data-testimonials-avatar
+                    />
+                  </figure>
 
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
+                  <h4
+                    class="h4 testimonials-item-title"
+                    data-testimonials-title
+                  >
+                    Nicolas V
+                  </h4>
 
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/face-3.jpeg" alt="Nicolas V" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Nicolas V</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    <i>
-                      Jayden has an amazing discovery and a pleasure
-                      to work with - the project has gone along
-                      smoothly - he came up with ideas and helped
-                      push the project along really well.
-                      Technically superb. Would recommend for any
-                      project
-                    </i>
-                  </p>
+                  <div class="testimonials-text" data-testimonials-text>
+                    <p>
+                      <i>
+                        Jayden has an amazing discovery and a pleasure to work
+                        with - the project has gone along smoothly - he came up
+                        with ideas and helped push the project along really
+                        well. Technically superb. Would recommend for any
+                        project
+                      </i>
+                    </p>
+                  </div>
                 </div>
+              </li>
+            </ul>
+          </section>
 
-              </div>
-            </li>
-
-          </ul>
-
-        </section>
-
-
-        <!--
+          <!--
           - testimonials modal
         -->
 
-        <div class="modal-container" data-modal-container>
+          <div class="modal-container" data-modal-container>
+            <div class="overlay" data-overlay></div>
 
-          <div class="overlay" data-overlay></div>
+            <section class="testimonials-modal">
+              <button class="modal-close-btn" data-modal-close-btn>
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
 
-          <section class="testimonials-modal">
+              <div class="modal-img-wrapper">
+                <figure class="modal-avatar-box">
+                  <img
+                    src="./assets/images/avatar-1.png"
+                    alt="Rashad Itani"
+                    width="80"
+                    data-modal-img
+                  />
+                </figure>
 
-            <button class="modal-close-btn" data-modal-close-btn>
-              <ion-icon name="close-outline"></ion-icon>
-            </button>
-
-            <div class="modal-img-wrapper">
-              <figure class="modal-avatar-box">
-                <img src="./assets/images/avatar-1.png" alt="Rashad Itani" width="80" data-modal-img>
-              </figure>
-
-              <img src="./assets/images/icon-quote.svg" alt="quote icon">
-            </div>
-
-            <div class="modal-content">
-
-              <h4 class="h3 modal-title" data-modal-title>Rashad Itani</h4>
-
-              <time datetime="modal-time">Co-Founder & CTO at Skipify</time>
-
-              <div data-modal-text>
-                <p>
-                  Jayden was hired to create a corporate identity. We were very pleased with the work done. She has a
-                  lot of experience
-                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                  consectetur adipiscing
-                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                </p>
+                <img src="./assets/images/icon-quote.svg" alt="quote icon" />
               </div>
 
-            </div>
+              <div class="modal-content">
+                <h4 class="h3 modal-title" data-modal-title>Rashad Itani</h4>
 
-          </section>
+                <time datetime="modal-time">Co-Founder & CTO at Skipify</time>
 
-        </div>
+                <div data-modal-text>
+                  <p>
+                    Jayden was hired to create a corporate identity. We were
+                    very pleased with the work done. She has a lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum
+                    dolor sit amet, ullamcous cididt consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels
+                    dolore magnarels alia.
+                  </p>
+                </div>
+              </div>
+            </section>
+          </div>
 
-
-        <!--
+          <!--
           - clients
         -->
 
-        <section class="clients">
+          <section class="clients">
+            <h3 class="h3 clients-title">Clients</h3>
 
-          <h3 class="h3 clients-title">Clients</h3>
+            <ul class="clients-list has-scrollbar">
+              <li class="clients-item">
+                <a href="#">
+                  <img
+                    src="./assets/images/logo-1-color.png"
+                    alt="client logo"
+                  />
+                </a>
+              </li>
 
-          <ul class="clients-list has-scrollbar">
+              <li class="clients-item">
+                <a href="#">
+                  <img
+                    src="./assets/images/logo-2-color.png"
+                    alt="client logo"
+                  />
+                </a>
+              </li>
 
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-1-color.png" alt="client logo">
-              </a>
-            </li>
+              <li class="clients-item">
+                <a href="#">
+                  <img
+                    src="./assets/images/logo-3-color.png"
+                    alt="client logo"
+                  />
+                </a>
+              </li>
 
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-2-color.png" alt="client logo">
-              </a>
-            </li>
+              <li class="clients-item">
+                <a href="#">
+                  <img
+                    src="./assets/images/logo-4-color.png"
+                    alt="client logo"
+                  />
+                </a>
+              </li>
 
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-3-color.png" alt="client logo">
-              </a>
-            </li>
+              <li class="clients-item">
+                <a href="#">
+                  <img
+                    src="./assets/images/logo-5-color.png"
+                    alt="client logo"
+                  />
+                </a>
+              </li>
 
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-4-color.png" alt="client logo">
-              </a>
-            </li>
+              <li class="clients-item">
+                <a href="#">
+                  <img
+                    src="./assets/images/logo-6-color.png"
+                    alt="client logo"
+                  />
+                </a>
+              </li>
+            </ul>
+          </section>
+        </article>
 
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-5-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-6-color.png" alt="client logo">
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
+        <!--
         - #RESUME
       -->
 
-      <article class="resume" data-page="resume">
+        <article class="resume" data-page="resume">
+          <header>
+            <h2 class="h2 article-title">Resume</h2>
+          </header>
 
-        <header>
-          <h2 class="h2 article-title">Resume</h2>
-        </header>
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
 
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
+              <h3 class="h3">Experience</h3>
             </div>
 
-            <h3 class="h3">Experience</h3>
-          </div>
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h2>Texonmo LTD</h2>
+                <i class="h4 timeline-item-title">Sr. Full Stack Engineer</i>
+                <i class="h5 timeline-item-address">England, United Kingdom</i>
+                <span>04/2022 — Present</span>
 
-          <ol class="timeline-list">
+                <p class="timeline-text" id="texonmo-experience">
+                  <!-- Experience items will be injected here by JavaScript -->
+                </p>
+              </li>
 
-            <li class="timeline-item">
+              <li class="timeline-item">
+                <h2>Forta Health</h2>
+                <i class="h4 timeline-item-title">Sr. Frontend Engineer</i>
+                <i class="h5 timeline-item-address">San Francisco, Califonia</i>
+                <span>01/2023 — 01/2024</span>
 
-              <h2>Texonmo LTD</h2>
-              <i class="h4 timeline-item-title">Sr. Full Stack Engineer</i>
-              <i class="h5 timeline-item-address">England, United Kingdom</i>
-              <span>04/2022 — Present</span>
+                <p class="timeline-text" id="forta-experience">
+                  <!-- Experience items will be injected here by JavaScript -->
+                </p>
+              </li>
 
-              <p class="timeline-text" id="texonmo-experience">
-                <!-- Experience items will be injected here by JavaScript -->
-              </p>
-              
-            </li>
-            
-            <li class="timeline-item">
-              
-              <h2>Forta Health</h2>
-              <i class="h4 timeline-item-title">Sr. Frontend Engineer</i>
-              <i class="h5 timeline-item-address">San Francisco, Califonia</i>
-              <span>01/2023 — 01/2024</span>              
-              
-              <p class="timeline-text" id="forta-experience">
-                <!-- Experience items will be injected here by JavaScript -->
-              </p>
-              
-            </li>
-            
-            <li class="timeline-item">
+              <li class="timeline-item">
+                <h2>Ordway</h2>
+                <i class="h4 timeline-item-title">Sr. Frontend Engineer</i>
+                <i class="h5 timeline-item-address"
+                  >Washington, District of Columbia</i
+                >
+                <span>01/2022 — 04/2023</span>
 
-              <h2>Ordway</h2>
-              <i class="h4 timeline-item-title">Sr. Frontend Engineer</i>
-              <i class="h5 timeline-item-address">Washington, District of Columbia</i>
-              <span>01/2022 — 04/2023</span>
-              
-              <p class="timeline-text" id="ordway-experience">
-                <!-- Experience items will be injected here by JavaScript -->
-              </p>
+                <p class="timeline-text" id="ordway-experience">
+                  <!-- Experience items will be injected here by JavaScript -->
+                </p>
+              </li>
 
-            </li>
+              <li class="timeline-item">
+                <h2>Skipify</h2>
+                <i class="h4 timeline-item-title">Sr. Full Stack Engineer</i>
+                <i class="h5 timeline-item-address">San Francisco, Califonia</i>
+                <span>10/2021 — 08/2022</span>
 
-            <li class="timeline-item">
-              
-              <h2>Skipify</h2>
-              <i class="h4 timeline-item-title">Sr. Full Stack Engineer</i>
-              <i class="h5 timeline-item-address">San Francisco, Califonia</i>
-              <span>10/2021 — 08/2022</span>
-              
-              <p class="timeline-text">
-              
-              <p class="timeline-text" id="skipify-experience">
-                <!-- Experience items will be injected here by JavaScript -->
-              </p>
-              
-            </li>
+                <p class="timeline-text"></p>
 
-            <li class="timeline-item">
-              
-              <h2>Kunzig Consulting</h2>
-              <i class="h4 timeline-item-title">Full Stack Engineer</i>
-              <i class="h5 timeline-item-address">San Francisco, Califonia</i>
-              <span>01/2015 — 10/2021</span>
-              
-              <p class="timeline-text">
-              
-              <p class="timeline-text" id="kunzig-experience">
-                <!-- Experience items will be injected here by JavaScript -->
-              </p>
-              
-            </li>
+                <p class="timeline-text" id="skipify-experience">
+                  <!-- Experience items will be injected here by JavaScript -->
+                </p>
+              </li>
 
-          </ol>
+              <li class="timeline-item">
+                <h2>Kunzig Consulting</h2>
+                <i class="h4 timeline-item-title">Full Stack Engineer</i>
+                <i class="h5 timeline-item-address">San Francisco, Califonia</i>
+                <span>01/2015 — 10/2021</span>
 
-        </section>
+                <p class="timeline-text"></p>
 
-        <section class="timeline">
+                <p class="timeline-text" id="kunzig-experience">
+                  <!-- Experience items will be injected here by JavaScript -->
+                </p>
+              </li>
+            </ol>
+          </section>
 
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+
+              <h3 class="h3">Education</h3>
             </div>
 
-            <h3 class="h3">Education</h3>
-          </div>
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">University of Calgary</h4>
 
-          <ol class="timeline-list">
+                <span>04/2010 — 12/2014</span>
 
-            <li class="timeline-item">
+                <p class="timeline-text">
+                  Relevant Coursework: Data Structures, Web Development,
+                  Database Management, Software Engineering, Algorithms
+                </p>
+              </li>
+            </ol>
+          </section>
 
-              <h4 class="h4 timeline-item-title">University of Calgary</h4>
+          <section class="skill">
+            <h3 class="h3 skills-title">My skills</h3>
 
-              <span>04/2010 — 12/2014</span>
+            <ul class="skills-list content-card">
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">React</h5>
+                  <data value="100">100%</data>
+                </div>
 
-              <p class="timeline-text">
-                Relevant Coursework: Data Structures, Web Development, Database Management, Software Engineering, Algorithms
-              </p>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 100%"></div>
+                </div>
+              </li>
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Angular</h5>
+                  <data value="100">100%</data>
+                </div>
 
-            </li>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 100%"></div>
+                </div>
+              </li>
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Vue</h5>
+                  <data value="80">80%</data>
+                </div>
 
-          </ol>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 80%"></div>
+                </div>
+              </li>
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Node.JS</h5>
+                  <data value="100">100%</data>
+                </div>
 
-        </section>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 100%"></div>
+                </div>
+              </li>
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">TypeScript</h5>
+                  <data value="90">90%</data>
+                </div>
 
-        <section class="skill">
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 90%"></div>
+                </div>
+              </li>
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">NextJS</h5>
+                  <data value="85">85%</data>
+                </div>
 
-          <h3 class="h3 skills-title">My skills</h3>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 85%"></div>
+                </div>
+              </li>
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Python</h5>
+                  <data value="90">90%</data>
+                </div>
 
-          <ul class="skills-list content-card">
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 90%"></div>
+                </div>
+              </li>
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">React Native</h5>
+                  <data value="80">80%</data>
+                </div>
 
-            <li class="skills-item">
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 80%"></div>
+                </div>
+              </li>
+            </ul>
+          </section>
+        </article>
 
-              <div class="title-wrapper">
-                <h5 class="h5">React</h5>
-                <data value="100">100%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 100%;"></div>
-              </div>
-
-            </li>
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Angular</h5>
-                <data value="100">100%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 100%;"></div>
-              </div>
-
-            </li>
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Vue</h5>
-                <data value="80">80%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 80%;"></div>
-              </div>
-
-            </li>
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Node.JS</h5>
-                <data value="100">100%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 100%;"></div>
-              </div>
-
-            </li>
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">TypeScript</h5>
-                <data value="90">90%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 90%;"></div>
-              </div>
-
-            </li>
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">NextJS</h5>
-                <data value="85">85%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 85%;"></div>
-              </div>
-
-            </li>
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Python</h5>
-                <data value="90">90%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 90%;"></div>
-              </div>
-
-            </li>
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">React Native</h5>
-                <data value="80">80%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 80%;"></div>
-              </div>
-
-            </li>
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
+        <!--
         - #PORTFOLIO
       -->
 
-      <article class="portfolio" data-page="portfolio">
+        <article class="portfolio" data-page="portfolio">
+          <header>
+            <h2 class="h2 article-title">Portfolio</h2>
+          </header>
 
-        <header>
-          <h2 class="h2 article-title">Portfolio</h2>
-        </header>
-
-        <section class="projects">
-
-          <ul class="filter-list">
-
-            <li class="filter-item">
-              <button class="active" data-filter-btn>All</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Web design</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Applications</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Web development</button>
-            </li>
-
-          </ul>
-
-          <div class="filter-select-box">
-
-            <button class="filter-select" data-select>
-
-              <div class="select-value" data-selecct-value>Select category</div>
-
-              <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
-              </div>
-
-            </button>
-
-            <ul class="select-list">
-
-              <li class="select-item">
-                <button data-select-item>All</button>
+          <section class="projects">
+            <ul class="filter-list">
+              <li class="filter-item">
+                <button class="active" data-filter-btn>All</button>
               </li>
 
-              <li class="select-item">
-                <button data-select-item>Web design</button>
+              <li class="filter-item">
+                <button data-filter-btn>Web design</button>
               </li>
 
-              <li class="select-item">
-                <button data-select-item>Applications</button>
+              <li class="filter-item">
+                <button data-filter-btn>Applications</button>
               </li>
 
-              <li class="select-item">
-                <button data-select-item>Web development</button>
+              <li class="filter-item">
+                <button data-filter-btn>Web development</button>
               </li>
-
             </ul>
 
-          </div>
+            <div class="filter-select-box">
+              <button class="filter-select" data-select>
+                <div class="select-value" data-selecct-value>
+                  Select category
+                </div>
 
-          <ul class="project-list">
+                <div class="select-icon">
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+              </button>
 
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="https://bluereceipt.com">
+              <ul class="select-list">
+                <li class="select-item">
+                  <button data-select-item>All</button>
+                </li>
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
+                <li class="select-item">
+                  <button data-select-item>Web design</button>
+                </li>
 
-                  <img src="./assets/images/1.jpg" alt="finance" loading="lazy">
-                </figure>
+                <li class="select-item">
+                  <button data-select-item>Applications</button>
+                </li>
 
-                <h3 class="project-title">Bluereceipt</h3>
+                <li class="select-item">
+                  <button data-select-item>Web development</button>
+                </li>
+              </ul>
+            </div>
 
-                <p class="project-category">Skills: React, Redux, TypeScript, GraphQL, Node.js</p>
+            <ul class="project-list">
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a href="https://bluereceipt.com">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
 
-              </a>
-            </li>
+                    <img
+                      src="./assets/images/1.jpg"
+                      alt="finance"
+                      loading="lazy"
+                    />
+                  </figure>
 
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="https://edulastic.com">
+                  <h3 class="project-title">Bluereceipt</h3>
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
+                  <p class="project-category">
+                    Skills: React, Redux, TypeScript, GraphQL, Node.js
+                  </p>
+                </a>
+              </li>
 
-                  <img src="./assets/images/2.jpg" alt="orizon" loading="lazy">
-                </figure>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a href="https://edulastic.com">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
 
-                <h3 class="project-title">Edulastic</h3>
+                    <img
+                      src="./assets/images/2.jpg"
+                      alt="orizon"
+                      loading="lazy"
+                    />
+                  </figure>
 
-                <p class="project-category">Skills: React, Redux, D3.js, BootStrap, Node.js, MongoDB</p>
+                  <h3 class="project-title">Edulastic</h3>
 
-              </a>
-            </li>
+                  <p class="project-category">
+                    Skills: React, Redux, D3.js, BootStrap, Node.js, MongoDB
+                  </p>
+                </a>
+              </li>
 
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="https://smartmember.com">
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a href="https://smartmember.com">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
+                    <img
+                      src="./assets/images/3.jpg"
+                      alt="fundo"
+                      loading="lazy"
+                    />
+                  </figure>
 
-                  <img src="./assets/images/3.jpg" alt="fundo" loading="lazy">
-                </figure>
+                  <h3 class="project-title">Smart Member</h3>
 
-                <h3 class="project-title">Smart Member</h3>
+                  <p class="project-category">
+                    Skills: Angular, PHP, Laravel, Material Design
+                  </p>
+                </a>
+              </li>
 
-                <p class="project-category">Skills: Angular, PHP, Laravel, Material Design</p>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="applications"
+              >
+                <a
+                  href="https://apps.apple.com/us/app/trad3r-social-trading-game/id1071254686"
+                >
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
 
-              </a>
-            </li>
+                    <img
+                      src="./assets/images/5.jpg"
+                      alt="brawlhalla"
+                      loading="lazy"
+                    />
+                  </figure>
 
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="https://apps.apple.com/us/app/trad3r-social-trading-game/id1071254686">
+                  <h3 class="project-title">Trad3R</h3>
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
+                  <p class="project-category">
+                    Skills: Object C, Firebase, FireStore
+                  </p>
+                </a>
+              </li>
 
-                  <img src="./assets/images/5.jpg" alt="brawlhalla" loading="lazy">
-                </figure>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web design"
+              >
+                <a href="https://eyeem.com">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
 
-                <h3 class="project-title">Trad3R</h3>
+                    <img
+                      src="./assets/images/10.jpg"
+                      alt="dsm."
+                      loading="lazy"
+                    />
+                  </figure>
 
-                <p class="project-category">Skills: Object C, Firebase, FireStore</p>
+                  <h3 class="project-title">Eyeem</h3>
 
-              </a>
-            </li>
+                  <p class="project-category">Tools: Wix</p>
+                </a>
+              </li>
 
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="https://eyeem.com">
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web design"
+              >
+                <a href="https://www.lendi.com.au">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
+                    <img
+                      src="./assets/images/9.jpg"
+                      alt="metaspark"
+                      loading="lazy"
+                    />
+                  </figure>
 
-                  <img src="./assets/images/10.jpg" alt="dsm." loading="lazy">
-                </figure>
+                  <h3 class="project-title">Lendi</h3>
 
-                <h3 class="project-title">Eyeem</h3>
+                  <p class="project-category">Tools: KendoUI, Wordpress</p>
+                </a>
+              </li>
 
-                <p class="project-category">Tools: Wix</p>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a href="https://ttc-hub.com">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
 
-              </a>
-            </li>
+                    <img
+                      src="./assets/images/4.jpg"
+                      alt="summary"
+                      loading="lazy"
+                    />
+                  </figure>
 
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="https://www.lendi.com.au">
+                  <h3 class="project-title">TTC Hub</h3>
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
+                  <p class="project-category">
+                    Skills: Next.js, Storybook, GraphQL, Python
+                  </p>
+                </a>
+              </li>
 
-                  <img src="./assets/images/9.jpg" alt="metaspark" loading="lazy">
-                </figure>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="applications"
+              >
+                <a href="https://www.datalicious.com">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
 
-                <h3 class="project-title">Lendi</h3>
+                    <img
+                      src="./assets/images/11.jpg"
+                      alt="task manager"
+                      loading="lazy"
+                    />
+                  </figure>
 
-                <p class="project-category">Tools: KendoUI, Wordpress</p>
+                  <h3 class="project-title">Datalicious</h3>
 
-              </a>
-            </li>
+                  <p class="project-category">
+                    Skills: React Native, Golang, PostgreSQL,
+                  </p>
+                </a>
+              </li>
 
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="https://ttc-hub.com">
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a href="https://zumper.com">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
+                    <img
+                      src="./assets/images/6.jpg"
+                      alt="arrival"
+                      loading="lazy"
+                    />
+                  </figure>
 
-                  <img src="./assets/images/4.jpg" alt="summary" loading="lazy">
-                </figure>
+                  <h3 class="project-title">Zumper</h3>
 
-                <h3 class="project-title">TTC Hub</h3>
+                  <p class="project-category">
+                    Skills: Angular, TypeScript, Nodes.js, HTML5, CSS3,
+                    BootStrap
+                  </p>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </article>
 
-                <p class="project-category">Skills: Next.js, Storybook, GraphQL, Python</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="https://www.datalicious.com">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/11.jpg" alt="task manager" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Datalicious</h3>
-
-                <p class="project-category">Skills: React Native, Golang, PostgreSQL, </p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="https://zumper.com">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/6.jpg" alt="arrival" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Zumper</h3>
-
-                <p class="project-category">Skills: Angular, TypeScript, Nodes.js, HTML5, CSS3, BootStrap </p>
-
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
+        <!--
         - #BLOG
       -->
 
-      <!-- <article class="blog" data-page="blog">
+        <!-- <article class="blog" data-page="blog">
 
         <header>
           <h2 class="h2 article-title">Blog</h2>
@@ -1173,127 +1201,136 @@
 
       </article> -->
 
-
-
-
-
-      <!--
+        <!--
         - #CONTACT
       -->
 
-      <article class="contact" data-page="contact">
+        <article class="contact" data-page="contact">
+          <header>
+            <h2 class="h2 article-title">Contact</h2>
+          </header>
 
-        <header>
-          <h2 class="h2 article-title">Contact</h2>
-        </header>
-
-        <section class="mapbox" data-mapbox>
-          <figure>
+          <section class="mapbox" data-mapbox>
+            <figure>
               <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199666.5651251294!2d-114.0719!3d51.0447!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53716f2f3c3c3c3f%3A0x1234567890abcdef!2sCalgary%2C%20AB%2C%20Canada!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"
-                  width="400" height="300" loading="lazy"></iframe>
-          </figure>
-      </section>
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199666.5651251294!2d-114.0719!3d51.0447!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53716f2f3c3c3c3f%3A0x1234567890abcdef!2sCalgary%2C%20AB%2C%20Canada!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"
+                width="400"
+                height="300"
+                loading="lazy"
+              ></iframe>
+            </figure>
+          </section>
 
-        <section class="contact-form">
+          <section class="contact-form">
+            <h3 class="h3 form-title">Contact Form</h3>
 
-          <h3 class="h3 form-title">Contact Form</h3>
+            <form action="#" class="form" data-form>
+              <div class="input-wrapper">
+                <input
+                  type="text"
+                  name="fullname"
+                  class="form-input"
+                  placeholder="Full name"
+                  required
+                  data-form-input
+                />
 
-          <form action="#" class="form" data-form>
+                <input
+                  type="email"
+                  name="email"
+                  class="form-input"
+                  placeholder="Email address"
+                  required
+                  data-form-input
+                />
+              </div>
 
-            <div class="input-wrapper">
-              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+              <textarea
+                name="message"
+                class="form-input"
+                placeholder="Your Message"
+                required
+                data-form-input
+              ></textarea>
 
-              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
-            </div>
+              <button class="form-btn" type="submit" disabled data-form-btn>
+                <ion-icon name="paper-plane"></ion-icon>
+                <span>Send Message</span>
+              </button>
+            </form>
+          </section>
+        </article>
+      </div>
+    </main>
 
-            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
-
-            <button class="form-btn" type="submit" disabled data-form-btn>
-              <ion-icon name="paper-plane"></ion-icon>
-              <span>Send Message</span>
-            </button>
-
-          </form>
-
-        </section>
-
-      </article>
-
-    </div>
-
-  </main>
-
-
-
-
-
-
-  <!--
+    <!--
     - custom js link
   -->
-  <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/script.js"></script>
 
-  <!--
+    <!--
     - ionicon link
   -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
 
-  <script>
-  // Helper function to render experience arrays
-  function renderExperience(containerId, experienceArray) {
-    const container = document.getElementById(containerId);
-    if (!container) return;
-    experienceArray.forEach(item => {
-      const h4 = document.createElement('h4');
-      h4.textContent = `- ${item}`;
-      container.appendChild(h4);
-    });
-  }
+    <script>
+      // Helper function to render experience arrays
+      function renderExperience(containerId, experienceArray) {
+        const container = document.getElementById(containerId);
+        if (!container) return;
+        experienceArray.forEach(item => {
+          const h4 = document.createElement('h4');
+          h4.textContent = `- ${item}`;
+          container.appendChild(h4);
+        });
+      }
 
-  // Experience data arrays
-  const texonmoExperience = [
-    "Designed and developed the platform's backend using Golang, resulting in a 30% improvement in application efficiency and faster response times for users.",
-    "Collaborated with cross-functional teams to design, implement, and deploy new features.",
-    "Implemented responsive and user-friendly UI components with React and TypeScript.",
-    "Maintained comprehensive documentation for new and existing features, ensuring ease of maintenance and scalability.",
-    "Ensured code quality and consistency through code reviews, unit testing, and integration testing."
-  ];
-  const fortaExperience = [
-    "Optimized the frontend performance of a healthcare platform built with React and Vue, resulting in a 40% reduction in video call latency and improved user experience for remote patient consultations.",
-    "Developed interactive data visualizations using React libraries like D3.js, allowing healthcare providers to analyze patient data more effectively and make informed decisions.",
-    "Established best practices for code quality and testing in React and NextJS, leading to a 30% reduction in bugs and improved stability of the healthcare application.",
-    "Implemented a system for collecting and integrating user feedback into the React frontend, facilitating continuous improvement based on user needs and preferences."
-  ];
-  const ordwayExperience = [
-    "Developed and implemented new feature(Analytics) using Ruby on Rails, Python, React, and PostgreSQL, resulting in 20% increase in data analysis efficiency",
-    "Collaborated closely with product managers, designers, and cross-functional teams to gather requirements, define project scope, and deliver high-quality software solutions on time",
-    "Integrated third-party APIs to enhance application functionality and data retrieval capabilities",
-    "Utilized Redux to manage application state, improving code maintainability and reducing bugs by 15%.",
-    "Participated in Agile development processes, including daily stand-ups, sprint planning, and retrospectives."
-  ];
-  const skipifyExperience = [
-    "Cooperated with a remote Agile development team to design, develop, and maintain web applications using React and Node.js technologies",
-    "Participated in daily stand-up meetings and bi-weekly sprint planning sessions to ensure smooth project execution and efficient task allocation within the team",
-    "Led the adoption of automated testing using Jest and Enzyme, resulting in a 30% reduction in production bugs and improved overall software reliability",
-    "Created interactive and responsive front-end interfaces, resulting in positive feedback from users and a 20% decrease in bounce rate"
-  ];
-  const kunzigExperience = [
-    "Developed 5 full-stack web applications which processed, analyzed, and rendered data visually",
-    "Conducted code reviews and provided constructive feedback to team members, resulting in improved code quality and best practices adherence",
-    "Liaised with 8 team members (back end developers, front end developers, quality assurance testers, and CTO) as needed",
-    "Designed and implemented 15 RESTful APIs, optimizing data exchange between front-end and back-end systems and reducing API response times by 40%"
-  ];
+      // Experience data arrays
+      const texonmoExperience = [
+        "Designed and developed the platform's backend using Golang, resulting in a 30% improvement in application efficiency and faster response times for users.",
+        "Implemented responsive and user-friendly UI components with React Native and TypeScript, significantly enhancing the overall user experience and accessibility of the platform.",
+        "Collaborated effectively with a cross-functional team of 8 members, including back-end developers, front-end developers, QA testers, and the CTO, to ensure seamless project delivery and alignment with business goals.",
+        "Led the adoption of automated testing tools such as Jest and Detox, achieving a 30% reduction in production bugs and enhancing software reliability through rigorous testing practices.",
+        "Developed and maintained full-stack web applications using NextJS, React, Node.js, Angular, TypeScript, and Python",
+      ];
+      const fortaExperience = [
+        "Optimized the frontend performance of a healthcare platform utilizing both React and React Native frameworks, resulting in a 40% reduction in video call latency and an improved user experience for remote patient consultations.",
+        "Developed interactive data visualizations using D3.js integrated with React, enabling healthcare providers to analyze patient data more effectively and make informed decisions.",
+        "Established best practices for code quality and testing in React and NextJS, leading to a 30% reduction in bugs and improved stability of the healthcare application.",
+        "Implemented a system for collecting and integrating user feedback into the React frontend, facilitating continuous improvement based on user needs and preference.",
+      ];
+      const ordwayExperience = [
+        "Developed and implemented new feature(Analytics) using Ruby on Rails, React, and PostgreSQL, resulting in 20% increase in data analysis efficiency.",
+        "Collaborated closely with product managers, designers, and cross-functional teams to gather requirements, define project scope, and deliver high-quality software solutions on time",
+        "Integrated third-party APIs to enhance application functionality and data retrieval capabilities.",
+        "Participated in Agile development processes, including daily stand-ups, sprint planning, and retrospectives"
+      ];
+      const skipifyExperience = [
+        "Cooperated with a remote Agile development team to design, develop, and maintain web applications using React and Node.js technologies",
+        "Led the adoption of automated testing using Jest and Enzyme, resulting in a 30% reduction in production bugs and improved overall software reliability",
+        "Created interactive and responsive front-end interfaces, resulting in positive feedback from users and a 20% decrease in bounce rate"
+      ];
+      const kunzigExperience = [
+        "Developed 5 full-stack web applications which processed, analyzed, and rendered data visually",
+        "Conducted code reviews and provided constructive feedback to team members, resulting in improved code quality and best practices adherence.",
+        "Maintained comprehensive documentation for new and existing features, ensuring ease of maintenance and scalability.",
+        "Participated in daily stand-up meetings and bi-weekly sprint planning sessions to ensure smooth project execution and efficient task allocation within the team",
+        "Reduced development time by 40% by creating a streamlined CI/CD pipeline."
+      ];
 
-  // Render all experiences
-  renderExperience('texonmo-experience', texonmoExperience);
-  renderExperience('forta-experience', fortaExperience);
-  renderExperience('ordway-experience', ordwayExperience);
-  renderExperience('skipify-experience', skipifyExperience);
-  renderExperience('kunzig-experience', kunzigExperience);
-</script>
-
-</body>
-
+      // Render all experiences
+      renderExperience('texonmo-experience', texonmoExperience);
+      renderExperience('forta-experience', fortaExperience);
+      renderExperience('ordway-experience', ordwayExperience);
+      renderExperience('skipify-experience', skipifyExperience);
+      renderExperience('kunzig-experience', kunzigExperience);
+    </script>
+  </body>
 </html>
